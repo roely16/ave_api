@@ -1,0 +1,733 @@
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 02:22:45	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 02:22:45	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 02:22:45	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:22:45	LOG::INFO	HW_PUSH_TOKEN_ARR==================>xxxxx
+2020-11-28 02:22:45	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 02:22:45	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 02:22:45	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 02:22:45	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 02:22:45	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 02:22:45	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 02:22:45	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 02:22:45	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 02:22:45	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:143]push msg start.............................
+2020-11-28 02:22:45	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:606]push msg notification start
+2020-11-28 02:22:45	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:619]push msg notification end
+2020-11-28 02:22:45	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"collapse_key":-1,"urgency":"HIGH","ttl":"1448s","bi_tag":"Trump","notification":{"title":" notification default hw title  notification ","body":" notification default hw body notification ","image":"https:\/\/developer-portalres-drcn.dbankcdn.com\/system\/modules\/org.opencms.portal.template.core\/resources\/images\/icon_Promotion.png","icon":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2.png","color":"#AACCDD","sound":"https:\/\/att.chinauui.com\/day_120606\/20120606_7fcf2235b44f1eab0b4dadtAkAGMTBHK.mp3","tag":"tagBoom","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end","url":"https:\/\/www.baidu.com","rich_resource":"test rich resource","action":"test add"},"body_loc_key":"M.String.body","body_loc_args":["Boy","Dog"],"title_loc_key":"M.String.title","title_loc_args":["Girl","Cat"],"channel_id":"RingRing","notify_summary":"Some Summary","style":0,"big_title":"Big Boom Title","big_body":"Big Boom Body","auto_clear":86400000,"notify_id":486,"group":"Espace","badge":{"add_num":99,"class":"Classic","set_num":99},"ticker":"i am a ticker","auto_cancel":false,"when":"2019-11-05","importance":"NORMAL","use_default_vibrate":true,"use_default_light":false,"vibrate_config":["1.5","2.000000001","3"],"visibility":"PUBLIC","light_settings":{"color":{"alpha":0,"red":0,"green":1,"blue":1},"light_on_duration":"3.5","light_off_duration":"5S"},"foreground_show":true}},"token":["xxxxx"]}
+2020-11-28 02:22:45	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:22:46	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9Rw\/onGJaPGMm0xhCiGZ8SKH9sxSkM7cl1VS3Uaj13exv\/PgitVVJL\/4Nu95BMN7L9qC9F058W9nc++nK","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:22:46	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9Rw\/onGJaPGMm0xhCiGZ8SKH9sxSkM7cl1VS3Uaj13exv\/PgitVVJL\/4Nu95BMN7L9qC9F058W9nc++nK","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:22:46	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:22:48	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80300007","msg":"All the tokens are invalid","requestId":"160650136848609369000607"}
+2020-11-28 02:22:48	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80300007","msg":"All the tokens are invalid","requestId":"160650136848609369000607"}
+2020-11-28 02:22:48	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:154]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 02:25:01	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 02:25:01	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 02:25:01	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:25:01	LOG::INFO	HW_PUSH_TOKEN_ARR==================>xxxxx
+2020-11-28 02:25:01	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 02:25:01	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 02:25:01	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 02:25:01	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 02:25:01	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 02:25:01	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 02:25:01	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 02:25:01	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 02:25:01	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:143]push msg start.............................
+2020-11-28 02:25:01	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:606]push msg notification start
+2020-11-28 02:25:01	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:619]push msg notification end
+2020-11-28 02:25:01	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"collapse_key":-1,"urgency":"HIGH","ttl":"1448s","bi_tag":"Trump","notification":{"title":" notification default hw title  notification ","body":" notification default hw body notification ","image":"https:\/\/developer-portalres-drcn.dbankcdn.com\/system\/modules\/org.opencms.portal.template.core\/resources\/images\/icon_Promotion.png","icon":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2.png","color":"#AACCDD","sound":"https:\/\/att.chinauui.com\/day_120606\/20120606_7fcf2235b44f1eab0b4dadtAkAGMTBHK.mp3","tag":"tagBoom","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end","url":"https:\/\/www.baidu.com","rich_resource":"test rich resource","action":"test add"},"body_loc_key":"M.String.body","body_loc_args":["Boy","Dog"],"title_loc_key":"M.String.title","title_loc_args":["Girl","Cat"],"channel_id":"RingRing","notify_summary":"Some Summary","style":0,"big_title":"Big Boom Title","big_body":"Big Boom Body","auto_clear":86400000,"notify_id":486,"group":"Espace","badge":{"add_num":99,"class":"Classic","set_num":99},"ticker":"i am a ticker","auto_cancel":false,"when":"2019-11-05","importance":"NORMAL","use_default_vibrate":true,"use_default_light":false,"vibrate_config":["1.5","2.000000001","3"],"visibility":"PUBLIC","light_settings":{"color":{"alpha":0,"red":0,"green":1,"blue":1},"light_on_duration":"3.5","light_off_duration":"5S"},"foreground_show":true}},"token":["xxxxx"]}
+2020-11-28 02:25:01	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:25:02	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9YUPQ8oPKaGCvdNeGGzyNvhTo1UmhV826uHx9EellJnn45ZSiszv9OOBbiSBgXEGgzhh3k+H59FiqviJS","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:25:02	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9YUPQ8oPKaGCvdNeGGzyNvhTo1UmhV826uHx9EellJnn45ZSiszv9OOBbiSBgXEGgzhh3k+H59FiqviJS","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:25:02	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:25:04	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80300007","msg":"All the tokens are invalid","requestId":"160650150431179585000507"}
+2020-11-28 02:25:04	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80300007","msg":"All the tokens are invalid","requestId":"160650150431179585000507"}
+2020-11-28 02:25:04	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:154]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 02:25:35	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 02:25:35	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 02:25:35	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:25:35	LOG::INFO	HW_PUSH_TOKEN_ARR==================>xxxxx
+2020-11-28 02:25:35	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 02:25:35	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 02:25:35	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 02:25:35	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 02:25:35	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 02:25:35	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 02:25:35	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 02:25:35	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 02:25:35	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:143]push msg start.............................
+2020-11-28 02:25:35	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:606]push msg notification start
+2020-11-28 02:25:35	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:619]push msg notification end
+2020-11-28 02:25:35	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"collapse_key":-1,"urgency":"HIGH","ttl":"1448s","bi_tag":"Trump","notification":{"title":" notification default hw title  notification ","body":" notification default hw body notification ","image":"https:\/\/developer-portalres-drcn.dbankcdn.com\/system\/modules\/org.opencms.portal.template.core\/resources\/images\/icon_Promotion.png","icon":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2.png","color":"#AACCDD","sound":"https:\/\/att.chinauui.com\/day_120606\/20120606_7fcf2235b44f1eab0b4dadtAkAGMTBHK.mp3","tag":"tagBoom","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end","url":"https:\/\/www.baidu.com","rich_resource":"test rich resource","action":"test add"},"body_loc_key":"M.String.body","body_loc_args":["Boy","Dog"],"title_loc_key":"M.String.title","title_loc_args":["Girl","Cat"],"channel_id":"RingRing","notify_summary":"Some Summary","style":0,"big_title":"Big Boom Title","big_body":"Big Boom Body","auto_clear":86400000,"notify_id":486,"group":"Espace","badge":{"add_num":99,"class":"Classic","set_num":99},"ticker":"i am a ticker","auto_cancel":false,"when":"2019-11-05","importance":"NORMAL","use_default_vibrate":true,"use_default_light":false,"vibrate_config":["1.5","2.000000001","3"],"visibility":"PUBLIC","light_settings":{"color":{"alpha":0,"red":0,"green":1,"blue":1},"light_on_duration":"3.5","light_off_duration":"5S"},"foreground_show":true}},"token":["xxxxx"]}
+2020-11-28 02:25:35	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:25:37	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9OQ0FGrMenVXQR9PSR8mQj58XF+2AanaDfcJcj1aP\/FIWXtGGKbl4bAP20yfm5MSLscyV9bWeQRtJ2GOG","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:25:37	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9OQ0FGrMenVXQR9PSR8mQj58XF+2AanaDfcJcj1aP\/FIWXtGGKbl4bAP20yfm5MSLscyV9bWeQRtJ2GOG","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:25:37	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:25:39	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80300007","msg":"All the tokens are invalid","requestId":"160650153893430457000607"}
+2020-11-28 02:25:39	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80300007","msg":"All the tokens are invalid","requestId":"160650153893430457000607"}
+2020-11-28 02:25:39	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:154]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 02:27:24	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 02:27:24	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 02:27:24	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:27:24	LOG::INFO	HW_PUSH_TOKEN_ARR==================>xxxxx
+2020-11-28 02:27:24	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 02:27:24	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 02:27:24	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 02:27:24	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 02:27:24	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 02:27:24	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 02:27:24	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 02:27:24	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 02:27:24	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:143]push msg start.............................
+2020-11-28 02:27:24	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:606]push msg notification start
+2020-11-28 02:27:24	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:619]push msg notification end
+2020-11-28 02:27:24	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"collapse_key":-1,"urgency":"HIGH","ttl":"1448s","bi_tag":"Trump","notification":{"title":" notification default hw title  notification ","body":" notification default hw body notification ","image":"https:\/\/developer-portalres-drcn.dbankcdn.com\/system\/modules\/org.opencms.portal.template.core\/resources\/images\/icon_Promotion.png","icon":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2.png","color":"#AACCDD","sound":"https:\/\/att.chinauui.com\/day_120606\/20120606_7fcf2235b44f1eab0b4dadtAkAGMTBHK.mp3","tag":"tagBoom","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end","url":"https:\/\/www.baidu.com","rich_resource":"test rich resource","action":"test add"},"body_loc_key":"M.String.body","body_loc_args":["Boy","Dog"],"title_loc_key":"M.String.title","title_loc_args":["Girl","Cat"],"channel_id":"RingRing","notify_summary":"Some Summary","style":0,"big_title":"Big Boom Title","big_body":"Big Boom Body","auto_clear":86400000,"notify_id":486,"group":"Espace","badge":{"add_num":99,"class":"Classic","set_num":99},"ticker":"i am a ticker","auto_cancel":false,"when":"2019-11-05","importance":"NORMAL","use_default_vibrate":true,"use_default_light":false,"vibrate_config":["1.5","2.000000001","3"],"visibility":"PUBLIC","light_settings":{"color":{"alpha":0,"red":0,"green":1,"blue":1},"light_on_duration":"3.5","light_off_duration":"5S"},"foreground_show":true}},"token":["xxxxx"]}
+2020-11-28 02:27:24	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:27:25	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x93+35g9EuHzT4xk+KrG6LYu\/kNZSTRFwo5+77GvRhYA9Xb505aPOwFyLas7PCZpTrJSWEoN0E\/5eQogNn","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:27:25	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x93+35g9EuHzT4xk+KrG6LYu\/kNZSTRFwo5+77GvRhYA9Xb505aPOwFyLas7PCZpTrJSWEoN0E\/5eQogNn","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:27:25	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:27:27	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80300007","msg":"All the tokens are invalid","requestId":"160650164740024508000107"}
+2020-11-28 02:27:27	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80300007","msg":"All the tokens are invalid","requestId":"160650164740024508000107"}
+2020-11-28 02:27:27	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:154]push msg end-----------------------------
+2020-11-28 02:27:27	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["xxxxx"]}
+2020-11-28 02:27:27	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:27:28	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9mJkHr+50SKY6ztF8Z5pSiAVQLbKAvXNDtwId8+0NiS9SrlIkWTR4cbrisl4W7l4W33BTtosRLSL16qn4","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:27:28	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9mJkHr+50SKY6ztF8Z5pSiAVQLbKAvXNDtwId8+0NiS9SrlIkWTR4cbrisl4W7l4W33BTtosRLSL16qn4","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:27:28	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:27:30	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80300007","msg":"All the tokens are invalid","requestId":"160650165042326487000107"}
+2020-11-28 02:27:30	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80300007","msg":"All the tokens are invalid","requestId":"160650165042326487000107"}
+2020-11-28 02:27:30	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2020-11-28 02:27:30	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:null
+2020-11-28 02:27:30	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:27:31	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9Fi7ofLSC6zGEU\/8WXQcqILp0pQH0llMRo3UhO2+uTDOcqsnPdKKq3j3bbx\/yZaRht0OIWQeR7T8oz6MM","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:27:31	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9Fi7ofLSC6zGEU\/8WXQcqILp0pQH0llMRo3UhO2+uTDOcqsnPdKKq3j3bbx\/yZaRht0OIWQeR7T8oz6MM","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:27:31	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:27:33	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650165348611584000407"}
+2020-11-28 02:27:33	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650165348611584000407"}
+2020-11-28 02:27:33	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 02:28:53	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 02:28:53	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 02:28:53	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:28:53	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2020-11-28 02:28:53	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 02:28:53	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 02:28:53	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 02:28:53	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 02:28:53	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 02:28:53	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 02:28:53	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 02:28:53	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 02:28:53	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:143]push msg start.............................
+2020-11-28 02:28:53	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:606]push msg notification start
+2020-11-28 02:28:53	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:619]push msg notification end
+2020-11-28 02:28:53	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"collapse_key":-1,"urgency":"HIGH","ttl":"1448s","bi_tag":"Trump","notification":{"title":" notification default hw title  notification ","body":" notification default hw body notification ","image":"https:\/\/developer-portalres-drcn.dbankcdn.com\/system\/modules\/org.opencms.portal.template.core\/resources\/images\/icon_Promotion.png","icon":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2.png","color":"#AACCDD","sound":"https:\/\/att.chinauui.com\/day_120606\/20120606_7fcf2235b44f1eab0b4dadtAkAGMTBHK.mp3","tag":"tagBoom","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end","url":"https:\/\/www.baidu.com","rich_resource":"test rich resource","action":"test add"},"body_loc_key":"M.String.body","body_loc_args":["Boy","Dog"],"title_loc_key":"M.String.title","title_loc_args":["Girl","Cat"],"channel_id":"RingRing","notify_summary":"Some Summary","style":0,"big_title":"Big Boom Title","big_body":"Big Boom Body","auto_clear":86400000,"notify_id":486,"group":"Espace","badge":{"add_num":99,"class":"Classic","set_num":99},"ticker":"i am a ticker","auto_cancel":false,"when":"2019-11-05","importance":"NORMAL","use_default_vibrate":true,"use_default_light":false,"vibrate_config":["1.5","2.000000001","3"],"visibility":"PUBLIC","light_settings":{"color":{"alpha":0,"red":0,"green":1,"blue":1},"light_on_duration":"3.5","light_off_duration":"5S"},"foreground_show":true}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:28:53	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:28:54	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x95qvUKRyYa9nL\/qfTDymLuV0p9zmrjsYoc+8jL2m9Pv85PqQ\/qY8\/0wOl6a9vUqDJoXjHfS+loQVVD4+x","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:28:54	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x95qvUKRyYa9nL\/qfTDymLuV0p9zmrjsYoc+8jL2m9Pv85PqQ\/qY8\/0wOl6a9vUqDJoXjHfS+loQVVD4+x","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:28:54	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:28:56	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650173627985355000107"}
+2020-11-28 02:28:56	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:154]push msg end-----------------------------
+2020-11-28 02:28:56	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:28:56	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:28:57	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x97EofS3wuN+eJygaPRwTWWTLavB7OxI0U5up7lcgi0aB8rxGheWE1foZLUZUCWpfKpIcWPunJ9hfNsyXQ","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:28:57	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x97EofS3wuN+eJygaPRwTWWTLavB7OxI0U5up7lcgi0aB8rxGheWE1foZLUZUCWpfKpIcWPunJ9hfNsyXQ","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:28:57	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:28:59	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650173933467289000607"}
+2020-11-28 02:28:59	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2020-11-28 02:28:59	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:null
+2020-11-28 02:28:59	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:29:00	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9duSRkR5dM3HKqnpWrCYLo3Gv9Azne2o+Q+CAcwnICIbib0FZ5N46Q1sj4UfmbEw+VWOba3Fk5Mt4oOBN","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:29:00	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9duSRkR5dM3HKqnpWrCYLo3Gv9Azne2o+Q+CAcwnICIbib0FZ5N46Q1sj4UfmbEw+VWOba3Fk5Mt4oOBN","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:29:00	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:29:02	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650174233072659000407"}
+2020-11-28 02:29:02	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650174233072659000407"}
+2020-11-28 02:29:02	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 02:29:58	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 02:29:58	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 02:29:58	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:29:58	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2020-11-28 02:29:58	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 02:29:58	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 02:29:58	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 02:29:58	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 02:29:58	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 02:29:58	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 02:29:58	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 02:29:58	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 02:29:58	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:143]push msg start.............................
+2020-11-28 02:29:58	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:606]push msg notification start
+2020-11-28 02:29:58	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:619]push msg notification end
+2020-11-28 02:29:58	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"collapse_key":-1,"urgency":"HIGH","ttl":"1448s","bi_tag":"Trump","notification":{"title":" notification default hw title  notification ","body":" notification default hw body notification ","image":"https:\/\/developer-portalres-drcn.dbankcdn.com\/system\/modules\/org.opencms.portal.template.core\/resources\/images\/icon_Promotion.png","icon":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2.png","color":"#AACCDD","sound":"https:\/\/att.chinauui.com\/day_120606\/20120606_7fcf2235b44f1eab0b4dadtAkAGMTBHK.mp3","tag":"tagBoom","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end","url":"https:\/\/www.baidu.com","rich_resource":"test rich resource","action":"test add"},"body_loc_key":"M.String.body","body_loc_args":["Boy","Dog"],"title_loc_key":"M.String.title","title_loc_args":["Girl","Cat"],"channel_id":"RingRing","notify_summary":"Some Summary","style":0,"big_title":"Big Boom Title","big_body":"Big Boom Body","auto_clear":86400000,"notify_id":486,"group":"Espace","badge":{"add_num":99,"class":"Classic","set_num":99},"ticker":"i am a ticker","auto_cancel":false,"when":"2019-11-05","importance":"NORMAL","use_default_vibrate":true,"use_default_light":false,"vibrate_config":["1.5","2.000000001","3"],"visibility":"PUBLIC","light_settings":{"color":{"alpha":0,"red":0,"green":1,"blue":1},"light_on_duration":"3.5","light_off_duration":"5S"},"foreground_show":true}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:29:58	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:29:59	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x978G+L8edZSWZbOb5JokknOHcT7PI+RQOm6\/hifnDDz630Nkw8R8YGlkHH+3vzlJW1h2DHUj0HCFz11T2","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:29:59	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x978G+L8edZSWZbOb5JokknOHcT7PI+RQOm6\/hifnDDz630Nkw8R8YGlkHH+3vzlJW1h2DHUj0HCFz11T2","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:29:59	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:30:01	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650180133884679000507"}
+2020-11-28 02:30:01	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:154]push msg end-----------------------------
+2020-11-28 02:30:01	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:30:01	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:30:02	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x99kZeFiY3fiHg\/LZdBhZHR+QE3SeXPlXFTz7VXRHhGSeqZ7L+gXZafCsagJYlhlwwSQOYAxkrmheSV8eQ","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:30:02	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x99kZeFiY3fiHg\/LZdBhZHR+QE3SeXPlXFTz7VXRHhGSeqZ7L+gXZafCsagJYlhlwwSQOYAxkrmheSV8eQ","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:30:02	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:30:04	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650180447186965000507"}
+2020-11-28 02:30:04	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2020-11-28 02:30:04	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:null
+2020-11-28 02:30:04	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:30:06	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9Bc73gb7bFwCKeMMv1CFA0Xf0gT3834a9jY0RRYwTA2o3AyGi\/CPjSFQDCODg1791XNaJugIO53mKSGgz","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:30:06	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9Bc73gb7bFwCKeMMv1CFA0Xf0gT3834a9jY0RRYwTA2o3AyGi\/CPjSFQDCODg1791XNaJugIO53mKSGgz","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:30:06	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:30:07	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650180749515896000607"}
+2020-11-28 02:30:07	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650180749515896000607"}
+2020-11-28 02:30:07	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 02:30:56	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 02:30:56	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 02:30:56	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:30:56	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2020-11-28 02:30:56	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 02:30:56	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 02:30:56	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 02:30:56	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 02:30:56	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 02:30:56	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 02:30:56	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 02:30:56	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 02:30:56	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:143]push msg start.............................
+2020-11-28 02:30:56	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:606]push msg notification start
+2020-11-28 02:30:56	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:619]push msg notification end
+2020-11-28 02:30:56	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"collapse_key":-1,"urgency":"HIGH","ttl":"1448s","bi_tag":"Trump","notification":{"title":" notification default hw title  notification ","body":" notification default hw body notification ","image":"https:\/\/developer-portalres-drcn.dbankcdn.com\/system\/modules\/org.opencms.portal.template.core\/resources\/images\/icon_Promotion.png","icon":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2.png","color":"#AACCDD","sound":"https:\/\/att.chinauui.com\/day_120606\/20120606_7fcf2235b44f1eab0b4dadtAkAGMTBHK.mp3","tag":"tagBoom","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end","url":"https:\/\/www.baidu.com","rich_resource":"test rich resource","action":"test add"},"body_loc_key":"M.String.body","body_loc_args":["Boy","Dog"],"title_loc_key":"M.String.title","title_loc_args":["Girl","Cat"],"channel_id":"RingRing","notify_summary":"Some Summary","style":0,"big_title":"Big Boom Title","big_body":"Big Boom Body","auto_clear":86400000,"notify_id":486,"group":"Espace","badge":{"add_num":99,"class":"Classic","set_num":99},"ticker":"i am a ticker","auto_cancel":false,"when":"2019-11-05","importance":"NORMAL","use_default_vibrate":true,"use_default_light":false,"vibrate_config":["1.5","2.000000001","3"],"visibility":"PUBLIC","light_settings":{"color":{"alpha":0,"red":0,"green":1,"blue":1},"light_on_duration":"3.5","light_off_duration":"5S"},"foreground_show":true}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:30:56	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:30:57	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9q50+yGdQr9aaqs4QVUH5ck2aLTWU0iAeWbiyuF0kFiZVKesygxumXCBG2Ag\/UyWeI3rROi+fuAg9RXKx","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:30:57	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9q50+yGdQr9aaqs4QVUH5ck2aLTWU0iAeWbiyuF0kFiZVKesygxumXCBG2Ag\/UyWeI3rROi+fuAg9RXKx","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:30:57	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:31:00	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650185982573150000107"}
+2020-11-28 02:31:00	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:154]push msg end-----------------------------
+2020-11-28 02:31:00	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:31:00	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:31:01	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9EYOeWJOHfYaBSZK4RBBfujMnTPBbpOKLXZoKLsVOReCvh5\/H2pW173ok8OHA1XUMT1BKGOVaXD1cXVx7","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:31:01	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9EYOeWJOHfYaBSZK4RBBfujMnTPBbpOKLXZoKLsVOReCvh5\/H2pW173ok8OHA1XUMT1BKGOVaXD1cXVx7","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:31:01	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:31:03	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650186289758389000407"}
+2020-11-28 02:31:03	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2020-11-28 02:31:03	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:null
+2020-11-28 02:31:03	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:31:04	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9OtdytP+ihqleg7qKMrPhpEi9Xt4Vg0MiSCvz8swtOwp9Z8qVbqhz8VKsE6byXXC+0rykAE7GtEr9UFr7","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:31:04	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9OtdytP+ihqleg7qKMrPhpEi9Xt4Vg0MiSCvz8swtOwp9Z8qVbqhz8VKsE6byXXC+0rykAE7GtEr9UFr7","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:31:04	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:31:06	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650186580057440000607"}
+2020-11-28 02:31:06	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650186580057440000607"}
+2020-11-28 02:31:06	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 02:34:32	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 02:34:32	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 02:34:32	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:34:32	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2020-11-28 02:34:32	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 02:34:32	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 02:34:32	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 02:34:32	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 02:34:32	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 02:34:32	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 02:34:32	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 02:34:32	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 02:34:32	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:143]push msg start.............................
+2020-11-28 02:34:32	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:606]push msg notification start
+2020-11-28 02:34:32	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:619]push msg notification end
+2020-11-28 02:34:32	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"collapse_key":-1,"urgency":"HIGH","ttl":"1448s","bi_tag":"Trump","notification":{"title":" notification default hw title  notification ","body":" notification default hw body notification ","image":"https:\/\/developer-portalres-drcn.dbankcdn.com\/system\/modules\/org.opencms.portal.template.core\/resources\/images\/icon_Promotion.png","icon":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2.png","color":"#AACCDD","sound":"https:\/\/att.chinauui.com\/day_120606\/20120606_7fcf2235b44f1eab0b4dadtAkAGMTBHK.mp3","tag":"tagBoom","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end","url":"https:\/\/www.baidu.com","rich_resource":"test rich resource","action":"test add"},"body_loc_key":"M.String.body","body_loc_args":["Boy","Dog"],"title_loc_key":"M.String.title","title_loc_args":["Girl","Cat"],"channel_id":"RingRing","notify_summary":"Some Summary","style":0,"big_title":"Big Boom Title","big_body":"Big Boom Body","auto_clear":86400000,"notify_id":486,"group":"Espace","badge":{"add_num":99,"class":"Classic","set_num":99},"ticker":"i am a ticker","auto_cancel":false,"when":"2019-11-05","importance":"NORMAL","use_default_vibrate":true,"use_default_light":false,"vibrate_config":["1.5","2.000000001","3"],"visibility":"PUBLIC","light_settings":{"color":{"alpha":0,"red":0,"green":1,"blue":1},"light_on_duration":"3.5","light_off_duration":"5S"},"foreground_show":true}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:34:32	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:34:33	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9lsdco6M12+iSlTgMWy1vDWI6HczHc+CukdWnCLmAMasyb3Rj5tFjYAip3NUFK\/CSmO6j5acm8vyqBJHr","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:34:33	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9lsdco6M12+iSlTgMWy1vDWI6HczHc+CukdWnCLmAMasyb3Rj5tFjYAip3NUFK\/CSmO6j5acm8vyqBJHr","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:34:33	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:34:35	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650207567412850000607"}
+2020-11-28 02:34:35	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:154]push msg end-----------------------------
+2020-11-28 02:34:35	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:null
+2020-11-28 02:34:35	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:34:37	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x95w1cebpEtsiv9kk53Psp\/Mr\/lkVy6UBZmeOYfs3EcXdqrKX+CNNxmoFPR7Z0hxtbf2TRWcdUckjJSO8I","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:34:37	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x95w1cebpEtsiv9kk53Psp\/Mr\/lkVy6UBZmeOYfs3EcXdqrKX+CNNxmoFPR7Z0hxtbf2TRWcdUckjJSO8I","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:34:37	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:34:38	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650207868235266000107"}
+2020-11-28 02:34:38	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650207868235266000107"}
+2020-11-28 02:34:38	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2020-11-28 02:34:38	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:null
+2020-11-28 02:34:38	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:34:40	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9tQlQzSwgwCz0w+9UYYiq8FUVz9WRU5U8HnYJ+89oZeic4tCQDd1Cjci1s5ZfH2RZtLeW6JSDBE7GNLPR","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:34:40	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9tQlQzSwgwCz0w+9UYYiq8FUVz9WRU5U8HnYJ+89oZeic4tCQDd1Cjci1s5ZfH2RZtLeW6JSDBE7GNLPR","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:34:40	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:34:42	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650208188020913000407"}
+2020-11-28 02:34:42	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650208188020913000407"}
+2020-11-28 02:34:42	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 02:46:33	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 02:46:33	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 02:46:33	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:46:33	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2020-11-28 02:46:33	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 02:46:33	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 02:46:33	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 02:46:33	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 02:46:33	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 02:46:33	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 02:46:33	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 02:46:33	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 02:46:33	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:143]push msg start.............................
+2020-11-28 02:46:33	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:606]push msg notification start
+2020-11-28 02:46:33	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:619]push msg notification end
+2020-11-28 02:46:33	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"collapse_key":-1,"urgency":"HIGH","ttl":"1448s","bi_tag":"Trump","notification":{"title":" notification default hw title  notification ","body":" notification default hw body notification ","image":"https:\/\/developer-portalres-drcn.dbankcdn.com\/system\/modules\/org.opencms.portal.template.core\/resources\/images\/icon_Promotion.png","icon":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2.png","color":"#AACCDD","sound":"https:\/\/att.chinauui.com\/day_120606\/20120606_7fcf2235b44f1eab0b4dadtAkAGMTBHK.mp3","tag":"tagBoom","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end","url":"https:\/\/www.baidu.com","rich_resource":"test rich resource","action":"test add"},"body_loc_key":"M.String.body","body_loc_args":["Boy","Dog"],"title_loc_key":"M.String.title","title_loc_args":["Girl","Cat"],"channel_id":"RingRing","notify_summary":"Some Summary","style":0,"big_title":"Big Boom Title","big_body":"Big Boom Body","auto_clear":86400000,"notify_id":486,"group":"Espace","badge":{"add_num":99,"class":"Classic","set_num":99},"ticker":"i am a ticker","auto_cancel":false,"when":"2019-11-05","importance":"NORMAL","use_default_vibrate":true,"use_default_light":false,"vibrate_config":["1.5","2.000000001","3"],"visibility":"PUBLIC","light_settings":{"color":{"alpha":0,"red":0,"green":1,"blue":1},"light_on_duration":"3.5","light_off_duration":"5S"},"foreground_show":true}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:46:33	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:46:39	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:null
+2020-11-28 02:46:39	LOG::ERROR	[push_admin\Application][refresh_token:125]refresh_token result error!
+2020-11-28 02:46:39	LOG::ERROR	[push_admin\Application][push_send_msg:187]accesstoken is empty!
+2020-11-28 02:46:39	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:154]push msg end-----------------------------
+2020-11-28 02:46:39	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:46:39	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:46:44	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x92cggwTOUL7q\/EF2ren0i3+PM3rngPLT\/6iaC6CbjrYJNMD4Sg2vCHpHRla2OrLBHNfx\/v54Q4Mn\/2XTX","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:46:44	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x92cggwTOUL7q\/EF2ren0i3+PM3rngPLT\/6iaC6CbjrYJNMD4Sg2vCHpHRla2OrLBHNfx\/v54Q4Mn\/2XTX","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:46:44	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:46:45	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650280559090178000107"}
+2020-11-28 02:46:45	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2020-11-28 02:46:45	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"title":" real notification default hw title notification2 ","body":" real notification default hw body notification ","color":"#AACCDD","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:46:45	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:46:47	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9\/BKLCXtI\/7AJJFN1c+yWXZwmzyPBUR0Omjrjtv8MHFVZAJns7pxO\/5PFzQwlNjiEOvw3i\/HblHd9e87m","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:46:47	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9\/BKLCXtI\/7AJJFN1c+yWXZwmzyPBUR0Omjrjtv8MHFVZAJns7pxO\/5PFzQwlNjiEOvw3i\/HblHd9e87m","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:46:47	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:46:48	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650280862745515000507"}
+2020-11-28 02:46:48	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 02:47:53	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 02:47:53	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 02:47:53	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:47:53	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2020-11-28 02:47:53	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 02:47:53	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 02:47:53	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 02:47:53	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 02:47:53	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 02:47:53	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 02:47:53	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 02:47:53	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 02:47:53	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:143]push msg start.............................
+2020-11-28 02:47:53	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:606]push msg notification start
+2020-11-28 02:47:53	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:619]push msg notification end
+2020-11-28 02:47:53	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"collapse_key":-1,"urgency":"HIGH","ttl":"1448s","bi_tag":"Trump","notification":{"title":" notification default hw title  notification ","body":" notification default hw body notification ","image":"https:\/\/developer-portalres-drcn.dbankcdn.com\/system\/modules\/org.opencms.portal.template.core\/resources\/images\/icon_Promotion.png","icon":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2.png","color":"#AACCDD","sound":"https:\/\/att.chinauui.com\/day_120606\/20120606_7fcf2235b44f1eab0b4dadtAkAGMTBHK.mp3","tag":"tagBoom","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end","url":"https:\/\/www.baidu.com","rich_resource":"test rich resource","action":"test add"},"body_loc_key":"M.String.body","body_loc_args":["Boy","Dog"],"title_loc_key":"M.String.title","title_loc_args":["Girl","Cat"],"channel_id":"RingRing","notify_summary":"Some Summary","style":0,"big_title":"Big Boom Title","big_body":"Big Boom Body","auto_clear":86400000,"notify_id":486,"group":"Espace","badge":{"add_num":99,"class":"Classic","set_num":99},"ticker":"i am a ticker","auto_cancel":false,"when":"2019-11-05","importance":"NORMAL","use_default_vibrate":true,"use_default_light":false,"vibrate_config":["1.5","2.000000001","3"],"visibility":"PUBLIC","light_settings":{"color":{"alpha":0,"red":0,"green":1,"blue":1},"light_on_duration":"3.5","light_off_duration":"5S"},"foreground_show":true}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:47:53	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:47:55	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9GpB3B9GIKq9Eb3lw4HN\/Cs98OiHWjZ3mhMYgn2eswA8DdTHQKU2oslD3DiqQp3KtT6PSM1VzroDycLC6","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:47:55	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9GpB3B9GIKq9Eb3lw4HN\/Cs98OiHWjZ3mhMYgn2eswA8DdTHQKU2oslD3DiqQp3KtT6PSM1VzroDycLC6","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:47:55	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:47:56	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650287672925866000407"}
+2020-11-28 02:47:56	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:154]push msg end-----------------------------
+2020-11-28 02:47:56	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:47:56	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:47:58	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9ah8Xn628shLcGyioO75cxeYKp5WQiTv++ZqvGLKfTGhJDOpwgJPs5lfVajMtPYt0LMk87FfrK8AT+b0d","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:47:58	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9ah8Xn628shLcGyioO75cxeYKp5WQiTv++ZqvGLKfTGhJDOpwgJPs5lfVajMtPYt0LMk87FfrK8AT+b0d","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:47:58	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:47:59	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650287969827988000407"}
+2020-11-28 02:47:59	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2020-11-28 02:47:59	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"title":" real notification default hw title notification2 ","body":" real notification default hw body notification ","color":"#AACCDD","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:47:59	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:48:01	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9Y0u+Sm714WpngrrO3beEbJRPrO2zSWJNUX6BfBba9zZTFNgGvwVQjBE9MrZslbqTSvG97SrUimrDP616","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:48:01	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9Y0u+Sm714WpngrrO3beEbJRPrO2zSWJNUX6BfBba9zZTFNgGvwVQjBE9MrZslbqTSvG97SrUimrDP616","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:48:01	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:48:03	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650288289727357000607"}
+2020-11-28 02:48:03	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 02:48:52	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 02:48:52	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 02:48:52	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:48:52	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2020-11-28 02:48:52	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 02:48:52	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 02:48:52	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 02:48:52	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 02:48:52	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 02:48:52	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 02:48:52	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 02:48:52	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 02:48:52	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:143]push msg start.............................
+2020-11-28 02:48:52	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:606]push msg notification start
+2020-11-28 02:48:52	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][createNotificationMsg:619]push msg notification end
+2020-11-28 02:48:52	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"collapse_key":-1,"urgency":"HIGH","ttl":"1448s","bi_tag":"Trump","notification":{"title":" notification default hw title  notification ","body":" notification default hw body notification ","image":"https:\/\/developer-portalres-drcn.dbankcdn.com\/system\/modules\/org.opencms.portal.template.core\/resources\/images\/icon_Promotion.png","icon":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2.png","color":"#AACCDD","sound":"https:\/\/att.chinauui.com\/day_120606\/20120606_7fcf2235b44f1eab0b4dadtAkAGMTBHK.mp3","tag":"tagBoom","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end","url":"https:\/\/www.baidu.com","rich_resource":"test rich resource","action":"test add"},"body_loc_key":"M.String.body","body_loc_args":["Boy","Dog"],"title_loc_key":"M.String.title","title_loc_args":["Girl","Cat"],"channel_id":"RingRing","notify_summary":"Some Summary","style":0,"big_title":"Big Boom Title","big_body":"Big Boom Body","auto_clear":86400000,"notify_id":486,"group":"Espace","badge":{"add_num":99,"class":"Classic","set_num":99},"ticker":"i am a ticker","auto_cancel":false,"when":"2019-11-05","importance":"NORMAL","use_default_vibrate":true,"use_default_light":false,"vibrate_config":["1.5","2.000000001","3"],"visibility":"PUBLIC","light_settings":{"color":{"alpha":0,"red":0,"green":1,"blue":1},"light_on_duration":"3.5","light_off_duration":"5S"},"foreground_show":true}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:48:52	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:48:53	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9HBhIvaiXYTZI5S6vIuo7PZO3e+RmGgygwhcSh6R1OfMdOAMy6X9lrGx7LmBGnkRfgZNDOG7ueCnAnQ0p","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:48:53	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9HBhIvaiXYTZI5S6vIuo7PZO3e+RmGgygwhcSh6R1OfMdOAMy6X9lrGx7LmBGnkRfgZNDOG7ueCnAnQ0p","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:48:53	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:48:55	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650293567968934000407"}
+2020-11-28 02:48:55	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgMessageByMsgType:154]push msg end-----------------------------
+2020-11-28 02:48:55	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:48:55	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:48:57	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9O62AxVwgNucUk5qH0rtivYakRFAOvYJS26xt+QnLWySJFC7R2nkbrUuTD0BKaQJNvq7PjwMzypX1xxJj","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:48:57	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9O62AxVwgNucUk5qH0rtivYakRFAOvYJS26xt+QnLWySJFC7R2nkbrUuTD0BKaQJNvq7PjwMzypX1xxJj","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:48:57	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:48:58	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650293868371089000407"}
+2020-11-28 02:48:58	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2020-11-28 02:48:58	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"title":" real notification default hw title notification2 ","body":" real notification default hw body notification ","color":"#AACCDD","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:48:58	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:49:00	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9TxUZX+1tWiwpPQ4qXoDpX1S6\/rsIrkUq5QFqd7OaRuWYq7rKHC\/jtTuNHiq7pKMkvh37tPO2kskBJKXV","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:49:00	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9TxUZX+1tWiwpPQ4qXoDpX1S6\/rsIrkUq5QFqd7OaRuWYq7rKHC\/jtTuNHiq7pKMkvh37tPO2kskBJKXV","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:49:00	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:49:02	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650294180643618000507"}
+2020-11-28 02:49:02	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 02:57:25	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 02:57:25	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 02:57:25	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:57:25	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2020-11-28 02:57:25	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 02:57:25	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 02:57:25	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 02:57:25	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 02:57:25	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 02:57:25	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 02:57:25	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 02:57:25	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 02:57:25	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:57:25	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:57:26	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9tzXDvsVaxoFMOlzmYKE3UP\/KzM6NpJOSI0s82z\/5DJHzbMHphy4DqoQIM00eFIeRUXcGzOYZb4n8\/f5b","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:57:26	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9tzXDvsVaxoFMOlzmYKE3UP\/KzM6NpJOSI0s82z\/5DJHzbMHphy4DqoQIM00eFIeRUXcGzOYZb4n8\/f5b","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:57:26	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:57:28	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650344823821738000607"}
+2020-11-28 02:57:28	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2020-11-28 02:57:28	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"title":" real notification default hw title notification2 ","body":" real notification default hw body notification ","color":"#AACCDD","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 02:57:28	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 02:57:29	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9IFZBswT5o4e8Wd2xaEN9Zkljb+LN5R5LmEvJALBUHkw7kqrBGjuMl3BVBRUID98PeoJaXty+1Rgci8Dt","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:57:29	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9IFZBswT5o4e8Wd2xaEN9Zkljb+LN5R5LmEvJALBUHkw7kqrBGjuMl3BVBRUID98PeoJaXty+1Rgci8Dt","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 02:57:29	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 02:57:31	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650345132944003000107"}
+2020-11-28 02:57:31	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 03:01:18	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 03:01:18	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 03:01:18	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 03:01:18	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2020-11-28 03:01:18	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 03:01:18	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 03:01:18	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 03:01:18	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 03:01:18	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 03:01:18	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 03:01:18	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 03:01:18	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 03:01:18	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 03:01:18	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 03:01:21	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9xJhIAPnt1VO26bRzsUM+q83rnIM+N0pOAVeqBavDUd2NE5BNA5oyniAMsX9sF9viQwHXsXk0zM4FWfMC","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:01:21	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9xJhIAPnt1VO26bRzsUM+q83rnIM+N0pOAVeqBavDUd2NE5BNA5oyniAMsX9sF9viQwHXsXk0zM4FWfMC","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:01:21	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 03:01:23	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80100003","msg":"Illegal payload, No valid android notification payload when sending notification message to android users","requestId":"160650368317617502000407"}
+2020-11-28 03:01:23	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80100003","msg":"Illegal payload, No valid android notification payload when sending notification message to android users","requestId":"160650368317617502000407"}
+2020-11-28 03:01:23	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2020-11-28 03:01:23	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 03:01:23	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 03:01:24	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9oeMR0+QWsY7Eebzm8d3ophcq+ZV\/kohReGN+jMIa0MtOh+DGqdinztIakzbtyDp8d1PckI0xpNJIAQz3","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:01:24	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9oeMR0+QWsY7Eebzm8d3ophcq+ZV\/kohReGN+jMIa0MtOh+DGqdinztIakzbtyDp8d1PckI0xpNJIAQz3","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:01:24	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 03:01:26	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80100003","msg":"Illegal payload, No valid android notification payload when sending notification message to android users","requestId":"160650368623917823000607"}
+2020-11-28 03:01:26	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80100003","msg":"Illegal payload, No valid android notification payload when sending notification message to android users","requestId":"160650368623917823000607"}
+2020-11-28 03:01:26	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 03:03:04	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 03:03:04	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 03:03:04	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 03:03:04	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2020-11-28 03:03:04	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 03:03:04	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 03:03:04	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 03:03:04	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 03:03:04	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 03:03:04	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 03:03:04	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 03:03:04	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 03:03:04	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 03:03:04	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 03:03:05	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9YxfB9dUUvpTZT7PzPb09wT9gIZWNn5lJn\/Ic1XCKQIXPwQNVV0FS6PqzYpIU6l2AE0lBUzKK5D\/cU4YE","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:03:05	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9YxfB9dUUvpTZT7PzPb09wT9gIZWNn5lJn\/Ic1XCKQIXPwQNVV0FS6PqzYpIU6l2AE0lBUzKK5D\/cU4YE","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:03:05	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 03:03:07	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650378685004944000507"}
+2020-11-28 03:03:07	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2020-11-28 03:03:07	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:null
+2020-11-28 03:03:07	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 03:03:08	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x98jtKbG5bFf06wFjHll6Xpejm9mx2P9rBCncobnz\/IINQWP3zpxtr1t5NmNNSYBWv4VlEJ96N5Sq0A2ca","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:03:08	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x98jtKbG5bFf06wFjHll6Xpejm9mx2P9rBCncobnz\/IINQWP3zpxtr1t5NmNNSYBWv4VlEJ96N5Sq0A2ca","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:03:08	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 03:03:10	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650379000854851000107"}
+2020-11-28 03:03:10	LOG::WARNING	[push_admin\Application][push_send_msg:203]push_send_msg leave,result:{"code":"80300010","msg":"token count should within 1 and 1,000","requestId":"160650379000854851000107"}
+2020-11-28 03:03:10	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 03:04:10	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 03:04:10	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 03:04:10	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 03:04:10	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2020-11-28 03:04:10	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 03:04:10	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 03:04:10	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 03:04:10	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 03:04:10	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 03:04:10	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 03:04:10	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 03:04:10	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 03:04:10	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 03:04:10	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 03:04:11	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9mkpK9Y4HUbWXSmNI17XLtcMWlzSavbmTfvTF+Rhs0XlwN\/pCnJWfrI54YBkg8wp\/R52Vp\/JGLOuXO1He","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:04:11	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9mkpK9Y4HUbWXSmNI17XLtcMWlzSavbmTfvTF+Rhs0XlwN\/pCnJWfrI54YBkg8wp\/R52Vp\/JGLOuXO1He","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:04:11	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 03:04:13	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650385304719295000107"}
+2020-11-28 03:04:13	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2020-11-28 03:04:13	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"title":" real notification default hw title notification2 ","body":" real notification default hw body notification ","color":"#AACCDD","sound":"alerta.wav","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 03:04:13	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 03:04:14	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x976TwNKg1yi5EJc6CP+8jwlrk9pMNyWE7vo5DnZMwygVz8ZzIV4z5YFOofGJHDInGnd1RApuWM1tgvzym","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:04:14	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x976TwNKg1yi5EJc6CP+8jwlrk9pMNyWE7vo5DnZMwygVz8ZzIV4z5YFOofGJHDInGnd1RApuWM1tgvzym","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:04:14	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 03:04:16	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650385608822105000107"}
+2020-11-28 03:04:16	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2020-11-28 03:05:18	LOG::INFO	HW_APPID===========================>103351775
+2020-11-28 03:05:18	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2020-11-28 03:05:18	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 03:05:18	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2020-11-28 03:05:18	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2020-11-28 03:05:18	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2020-11-28 03:05:18	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2020-11-28 03:05:18	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2020-11-28 03:05:18	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2020-11-28 03:05:18	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2020-11-28 03:05:18	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2020-11-28 03:05:18	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2020-11-28 03:05:18	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 03:05:18	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 03:05:20	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9dj3vJxn06qd3cpORv\/MkqCNdlJSXXKZwCPR00+Ll2jzbxW4DG0fumxW9YNjDccACBG35tY3rCvOlj1zM","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:05:20	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9dj3vJxn06qd3cpORv\/MkqCNdlJSXXKZwCPR00+Ll2jzbxW4DG0fumxW9YNjDccACBG35tY3rCvOlj1zM","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:05:20	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 03:05:21	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650392148074463000407"}
+2020-11-28 03:05:21	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2020-11-28 03:05:21	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"title":" real notification default hw title notification2 ","body":" real notification default hw body notification ","color":"#AACCDD","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2020-11-28 03:05:21	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2020-11-28 03:05:22	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:{"access_token":"CgB6e3x9GEtPhNPObNZSArq17xWL55hjJQ4lwkLnYIeuOdn4gGBwWUgAKDLlIME51VEM0+2YmI5csv6zBXACr0sS","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:05:22	LOG::INFO	[push_admin\Application][refresh_token:128]refresh_token result:{"access_token":"CgB6e3x9GEtPhNPObNZSArq17xWL55hjJQ4lwkLnYIeuOdn4gGBwWUgAKDLlIME51VEM0+2YmI5csv6zBXACr0sS","expires_in":3600,"token_type":"Bearer"}
+2020-11-28 03:05:22	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://push-api.cloud.huawei.com/v1/103351775/messages:send
+2020-11-28 03:05:24	LOG::INFO	[push_admin\Application][push_send_msg:197]push_send_msg leave,result:{"code":"80000000","msg":"Success","requestId":"160650392450374432000607"}
+2020-11-28 03:05:24	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2021-01-06 23:37:48	LOG::INFO	HW_APPID===========================>
+2021-01-06 23:37:48	LOG::INFO	HW_APPSECRET=======================>
+2021-01-06 23:37:48	LOG::INFO	HW_TOKEN_SERVER====================>
+2021-01-06 23:37:48	LOG::INFO	HW_PUSH_TOKEN_ARR==================>
+2021-01-06 23:37:48	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>
+2021-01-06 23:37:48	LOG::INFO	APN_PUSH_TOKEN_ARR=================>
+2021-01-06 23:37:48	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>
+2021-01-06 23:37:48	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>
+2021-01-06 23:37:48	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>
+2021-01-06 23:37:48	LOG::INFO	HW_FAST_APPID======================>
+2021-01-06 23:37:48	LOG::INFO	HW_FAST_APPSECRET==================>
+2021-01-06 23:37:48	LOG::INFO	HW_FAST_PUSH_TOKEN=================>
+2021-01-06 23:37:48	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":[""]}
+2021-01-06 23:37:48	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:
+2021-01-06 23:37:48	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:null
+2021-01-06 23:37:48	LOG::ERROR	[push_admin\Application][refresh_token:125]refresh_token result error!
+2021-01-06 23:37:48	LOG::ERROR	[push_admin\Application][push_send_msg:187]accesstoken is empty!
+2021-01-06 23:37:48	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2021-01-06 23:37:48	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"title":" real notification default hw title notification2 ","body":" real notification default hw body notification ","color":"#AACCDD","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":[""]}
+2021-01-06 23:37:48	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:
+2021-01-06 23:37:48	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:null
+2021-01-06 23:37:48	LOG::ERROR	[push_admin\Application][refresh_token:125]refresh_token result error!
+2021-01-06 23:37:48	LOG::ERROR	[push_admin\Application][push_send_msg:187]accesstoken is empty!
+2021-01-06 23:37:48	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2021-01-06 23:38:48	LOG::INFO	HW_APPID===========================>103351775
+2021-01-06 23:38:48	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2021-01-06 23:38:48	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2021-01-06 23:38:48	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2021-01-06 23:38:48	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2021-01-06 23:38:48	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2021-01-06 23:38:48	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2021-01-06 23:38:48	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2021-01-06 23:38:48	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2021-01-06 23:38:48	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2021-01-06 23:38:48	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2021-01-06 23:38:48	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2021-01-06 23:38:48	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2021-01-06 23:38:48	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2021-01-06 23:38:53	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:null
+2021-01-06 23:38:53	LOG::ERROR	[push_admin\Application][refresh_token:125]refresh_token result error!
+2021-01-06 23:38:53	LOG::ERROR	[push_admin\Application][push_send_msg:187]accesstoken is empty!
+2021-01-06 23:38:53	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2021-01-06 23:38:53	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"title":" real notification default hw title notification2 ","body":" real notification default hw body notification ","color":"#AACCDD","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ"]}
+2021-01-06 23:38:53	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2021-01-06 23:38:58	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:null
+2021-01-06 23:38:58	LOG::ERROR	[push_admin\Application][refresh_token:125]refresh_token result error!
+2021-01-06 23:38:58	LOG::ERROR	[push_admin\Application][push_send_msg:187]accesstoken is empty!
+2021-01-06 23:38:58	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2021-01-06 23:40:38	LOG::INFO	HW_APPID===========================>103351775
+2021-01-06 23:40:38	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2021-01-06 23:40:38	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2021-01-06 23:40:38	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2021-01-06 23:40:38	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2021-01-06 23:40:38	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2021-01-06 23:40:38	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2021-01-06 23:40:38	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2021-01-06 23:40:38	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2021-01-06 23:40:38	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2021-01-06 23:40:38	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2021-01-06 23:40:38	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2021-01-06 23:40:38	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:null
+2021-01-06 23:40:38	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2021-01-06 23:40:43	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:null
+2021-01-06 23:40:43	LOG::ERROR	[push_admin\Application][refresh_token:125]refresh_token result error!
+2021-01-06 23:40:43	LOG::ERROR	[push_admin\Application][push_send_msg:187]accesstoken is empty!
+2021-01-06 23:40:43	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2021-01-06 23:40:43	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:null
+2021-01-06 23:40:43	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2021-01-06 23:40:48	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:null
+2021-01-06 23:40:48	LOG::ERROR	[push_admin\Application][refresh_token:125]refresh_token result error!
+2021-01-06 23:40:48	LOG::ERROR	[push_admin\Application][push_send_msg:187]accesstoken is empty!
+2021-01-06 23:40:48	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+
+    ___ ___  __      __  __________ ____ ___  _________ ___ ___   __________  ___ _____________
+    /   |   \/  \    /  \ \______   \    |   \/   _____//   |   \  \______   \/   |   \______   \
+    /    ~    \   \/\/   /  |     ___/    |   /\_____  \/    ~    \  |     ___/    ~    \     ___/
+    \    Y    /\        /   |    |   |    |  / /        \    Y    /  |    |   \    Y    /    |
+    \___|_  /  \__/\  /    |____|   |______/ /_______  /\___|_  /   |____|    \___|_  /|____|
+    \/        \/                               \/       \/                    \/          
+2021-01-06 23:42:22	LOG::INFO	HW_APPID===========================>103351775
+2021-01-06 23:42:22	LOG::INFO	HW_APPSECRET=======================>4f85edea7d682f36c0fde5afeb518c60c27d0e0e000e28c9255a6752509cb7ea
+2021-01-06 23:42:22	LOG::INFO	HW_TOKEN_SERVER====================>https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2021-01-06 23:42:22	LOG::INFO	HW_PUSH_TOKEN_ARR==================>ADrcAZBKQNfV_yQivMi56wxjePtMChWbyRtKdlswu16A_6PzEVkwbxZ546RKu6TrOBDP8H-dGPq7BGobFL9bzH7bCXOp7mC9S9mg0_MCTgJvbNOcM2Mt-uNttk1MaT9UoQ
+2021-01-06 23:42:22	LOG::INFO	WEBPUSH_PUSH_TOKEN_ARR=============>xxxxx
+2021-01-06 23:42:22	LOG::INFO	APN_PUSH_TOKEN_ARR=================>xxxxx
+2021-01-06 23:42:22	LOG::INFO	HW_TOPIC_SUBSCRIBE_SERVER==========>https://push-api.cloud.huawei.com/v1/{appid}/topic:subscribe
+2021-01-06 23:42:22	LOG::INFO	HW_TOPIC_UNSUBSCRIBE_SERVER========>https://push-api.cloud.huawei.com/v1/{appid}/topic:unsubscribe
+2021-01-06 23:42:22	LOG::INFO	HW_TOPIC_QUERY_SUBSCRIBER_SERVER===>https://push-api.cloud.huawei.com/v1/{appid}/topic:list
+2021-01-06 23:42:22	LOG::INFO	HW_FAST_APPID======================>xxxxx
+2021-01-06 23:42:22	LOG::INFO	HW_FAST_APPSECRET==================>xxxxx
+2021-01-06 23:42:22	LOG::INFO	HW_FAST_PUSH_TOKEN=================>xxxxx
+2021-01-06 23:42:22	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News1","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["IQAAAACy0cW-AABbROTLHSLng-J6D2nC2XQitx9Ivm6OuSXsb5qUkCRLFoKtY4R-oxCrSdefiyp_IwTfqq84Lv_kSkSuoSUbXLRgc4KPIr75eaSr2A"]}
+2021-01-06 23:42:22	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2021-01-06 23:42:27	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:null
+2021-01-06 23:42:27	LOG::ERROR	[push_admin\Application][refresh_token:125]refresh_token result error!
+2021-01-06 23:42:27	LOG::ERROR	[push_admin\Application][push_send_msg:187]accesstoken is empty!
+2021-01-06 23:42:27	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
+2021-01-06 23:42:27	LOG::INFO	[push_admin\Application][push_send_msg:173]push_send_msg enter msg:{"notification":{"title":"Big News","body":"This is a Big News!","image":"https:\/\/res.vmallres.com\/pimages\/\/common\/config\/logo\/SXppnESYv4K11DBxDFc2_0.png"},"android":{"notification":{"title":" real notification default hw title notification2 ","body":" real notification default hw body notification ","color":"#AACCDD","click_action":{"type":1,"intent":"#Intent;compo=com.rvr\/.Activity;S.W=U;end"}}},"token":["IQAAAACy0cW-AABbROTLHSLng-J6D2nC2XQitx9Ivm6OuSXsb5qUkCRLFoKtY4R-oxCrSdefiyp_IwTfqq84Lv_kSkSuoSUbXLRgc4KPIr75eaSr2A"]}
+2021-01-06 23:42:27	LOG::INFO	[push_admin\Application][curl_https_post:136]curl_https_post enter url:https://oauth-login.cloud.huawei.com/oauth2/v2/token
+2021-01-06 23:42:32	LOG::INFO	[push_admin\Application][refresh_token:123]refresh_token result:null
+2021-01-06 23:42:32	LOG::ERROR	[push_admin\Application][refresh_token:125]refresh_token result error!
+2021-01-06 23:42:32	LOG::ERROR	[push_admin\Application][push_send_msg:187]accesstoken is empty!
+2021-01-06 23:42:32	LOG::INFO	[PushMsg             ]	[TestPushMsgCommon][sendPushMsgRealMessage:169]push msg end-----------------------------
